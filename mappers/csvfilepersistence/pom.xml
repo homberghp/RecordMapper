@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>io.github.sebivenlo</groupId>
+        <artifactId>testeasypom</artifactId>
+        <!--  defaults to java release 11 -->
+        <version>5.0.0</version>
+        <relativePath/>
+    </parent>
+    <groupId>csvfilepersistence</groupId>
+    <artifactId>csvfilepersistence</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    <name>csvfilepersistence :: solution-base</name>
+    <properties>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>nl.hitbay.generics</groupId>
+            <artifactId>genericmapper</artifactId>
+            <version>1.0</version>
+            <type>jar</type>
+        </dependency>
+<!--        <dependency>
+            <groupId></groupId>
+            <artifactId></artifactId>
+            <version></version>
+        </dependency>-->
+    </dependencies>
+    
+</project>
+

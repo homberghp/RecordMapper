@@ -1,0 +1,43 @@
+package %1$s;
+
+import %2$s;
+import genericmapper.Mapper;
+import java.util.function.Function;
+
+/**
+ * Generated code. Do not edit, your changes will be lost.
+ */
+public class %3$sMapper extends Mapper<%3$s, %4$s> {
+
+    // No public ctor 
+    private %3$sMapper() {
+        super( %3$s.class, java.lang.invoke.MethodHandles.lookup()  );
+    }
+
+    // self register
+    static {
+        Mapper.register( new %3$sMapper() );
+    }
+
+    // the method that it is all about
+    @Override
+    public Object[] deconstruct(  %3$s %5$s ) {
+           return new Object[]{
+%6$s
+           }; 
+    }
+
+    @Override
+    public Function<%3$s, %4$s> keyExtractor() {
+        return ( %3$s %5$s ) -> %5$s.%7$s;
+    }
+
+    @Override
+    public Class<%4$s> keyType() {
+        return %4$s.class;
+
+    }
+
+    @Override
+%8$s
+} // Code Generated on %9$s

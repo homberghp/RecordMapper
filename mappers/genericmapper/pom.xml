@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>nl.hitbay.generics</groupId>
+        <artifactId>parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../</relativePath>
+    </parent>
+    <groupId>nl.hitbay.generics</groupId>
+    <artifactId>genericmapper</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>genericmapper :: solution-base</name>
+    <properties>
+        <exec.mainClass>genericmapper.MapperGenerator</exec.mainClass>
+        <!-- add add-opens lines for all packages in your module that are tested.
+             For testing it is fine to open your packages for the whole world, which includes
+             e.g. junit, assertj, mockito, and jacoco.
+             Also leave ${argLine} because it is set/used by the coverage plugin.
+        -->
+        <surefire.opens>
+            --add-opens  genericmapper/genericmapper=ALL-UNNAMED 
+            --add-opens  genericmapper/entities=ALL-UNNAMED 
+        </surefire.opens>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>nl.hitbay.generics</groupId>
+            <artifactId>sebiannotations</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>jar</type>
+        </dependency>
+    </dependencies>
+    <build>
+        <!-- <finalName>genericmapper</finalName> -->
+    </build>
+</project>
+

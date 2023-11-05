@@ -1,0 +1,3 @@
+#!/bin/bash
+rm -fr ../sampleentities/target
+find  ../sampleentities/ -name *Mapper.java -exec rm -f {} \;

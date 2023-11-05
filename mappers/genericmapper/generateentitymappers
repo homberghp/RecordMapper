@@ -1,0 +1,8 @@
+#!/bin/bash
+scriptdir=$(dirname $(readlink -f $0))
+version=3.0.0
+jar=${scriptdir}/target/genericmapper-${version}-jar-with-dependencies.jar
+#echo "jar=${jar}"
+java -cp ${jar}:target/classes:target/test-classes -Dmapper.generator.classesDir=target/classes genericmapper.MapperGeneratorRunner "$@"
+java -cp ${jar}:target/classes:target/test-classes -Dmapper.generator.classesDir=target/test-classes genericmapper.MapperGeneratorRunner "$@"
+
