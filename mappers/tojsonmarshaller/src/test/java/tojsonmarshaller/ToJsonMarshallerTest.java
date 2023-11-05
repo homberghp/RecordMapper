@@ -21,7 +21,7 @@ import static tojsonmarshaller.TestData.*;
 
 /**
  *
- * @author "Pieter van den Hombergh {@code p.vandenhombergh@fontys.nl}"
+ * @author "Pieter van den Hombergh {@code pieter.van.den.hombergh@gmail.com}"
  */
 public class ToJsonMarshallerTest {
 

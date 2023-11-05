@@ -38,7 +38,7 @@ import nl.fontys.sebivenlo.sebiannotations.ID;
  * value<li>
  * </ul>
  *
- * @author Pieter van den Hombergh {@code p.vandenhombergh@fontys.nl}
+ * @author Pieter van den Hombergh {@code pieter.van.den.hombergh@gmail.com}
  * @param <E> entity type to map.
  * @param <K> key for the entity
  */
